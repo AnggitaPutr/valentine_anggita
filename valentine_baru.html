@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Greeting</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f3f3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #e74c3c;
+        }
+
+        p {
+            color: #333;
+        }
+
+        .heart {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" onclick="showMessage()">
+        <h1><span class="heart">&hearts;</span> Selamat Hari Valentine! <span class="heart">&hearts;</span></h1>
+        <p>Terima kasih telah menjadi bagian dari hidupku.</p>
+        <p>Setiap hari bersamamu adalah hari yang istimewa.</p>
+        <p><strong>Happy Valentine's Day!</strong></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Terima kasih telah membuka kartu Valentine ini!");
+        }
+    </script>
+</body>
+</html>
